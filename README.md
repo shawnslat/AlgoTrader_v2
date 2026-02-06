@@ -195,3 +195,13 @@ The bot also monitors positions continuously for stop loss enforcement.
 ## Disclaimer
 
 This software is for educational and research purposes. Markets involve substantial risk. Past performance does not guarantee future results. Use paper trading and validate thoroughly before considering any real capital.
+
+## License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+### Disclaimer
+This software is provided for educational and research purposes only.
+It does not constitute financial advice. Trading involves risk, and the
+authors assume no responsibility for financial losses.
+
