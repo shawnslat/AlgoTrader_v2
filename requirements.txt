@@ -1,0 +1,35 @@
+# Core
+pandas
+numpy
+requests
+pytz
+pyyaml
+joblib
+schedule
+aiohttp
+
+# Technical Analysis
+ta
+# TA-Lib          # Optional: brew install ta-lib && pip install TA-Lib
+
+# Plotting
+matplotlib
+seaborn
+
+# Machine Learning
+xgboost
+scikit-learn
+
+# Broker & Market Data
+alpaca-trade-api
+
+# LLM / Sentiment
+openai
+anthropic
+
+# News & Social
+tweepy
+finvizfinance
+
+# GUI
+PyQt6

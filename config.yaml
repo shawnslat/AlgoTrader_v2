@@ -1,0 +1,97 @@
+alpaca:
+  api_key: YOUR_ALPACA_API_KEY
+  api_secret: YOUR_ALPACA_API_SECRET
+  base_url: https://paper-api.alpaca.markets
+buying_power_pct: 50
+claude:
+  api_key: YOUR_ANTHROPIC_API_KEY
+  model: claude-3-haiku-20240307
+confidence:
+  enabled: true
+  full_confidence_threshold: 0.7
+  min_confidence_to_trade: 0.4
+  weight_dexter: 0.3
+  weight_fundamental: 0.1
+  weight_ml: 0.2
+  weight_sentiment: 0.2
+  weight_technical: 0.2
+crypto:
+  enabled: true
+  lookback_days: 365
+  max_position_pct: 2.5
+  min_qty: 0.0001
+  risk_multiplier: 1.5
+  risk_per_trade_pct: 0.15
+  stop_loss_pct: 0.15
+  take_profit_pct: 0.25
+  tickers:
+  - BTC/USD
+  - ETH/USD
+  - SOL/USD
+  time_in_force: gtc
+  trading_hours:
+    enabled: false
+dexter_autofetch: false
+dexter_bias_command: cd dexter && bun run dexter-bias.ts
+dexter_bias_timeout_seconds: 120
+dexter_chat_command: cd dexter && bun run dexter-chat.ts
+dexter_chat_timeout_seconds: 180
+dexter_ticker_command: cd dexter && bun run dexter-tickers.ts
+dexter_ticker_timeout_seconds: 45
+grok_api_key: YOUR_XAI_GROK_API_KEY
+job_interval_minutes: 30
+market_hours:
+  end: '16:00'
+  start: 09:30
+max_position_pct: 5.0
+newsapi_token: YOUR_NEWSAPI_TOKEN
+notifications:
+  enabled: false
+  webhook_url: ''
+polygon:
+  api_key: YOUR_POLYGON_API_KEY
+risk_per_trade_pct: 0.15
+schedule:
+  afternoon_run: '15:15'
+  enable_morning_run: true
+  morning_run: '10:00'
+sentiment:
+  batch_mode: true
+  enabled: true
+  fallback_provider: grok
+  llm_timeout_seconds: 30
+  max_items: 20
+  primary_provider: claude
+sentiment_enhancement:
+  detect_price_divergence: true
+  use_magnitude_scoring: true
+  use_recency_weighting: true
+smart_orders:
+  enabled: true
+  fallback_to_market: true
+  ioc_timeout_seconds: 1
+  limit_improvement_pct: 0.1
+stop_loss_pct: 0.04
+take_profit_pct: 0.08
+tickers:
+- AAPL
+- NVDA
+- TSLA
+- MSFT
+- GOOGL
+- META
+- AMD
+- JPM
+trailing_stop:
+  enabled: true
+  trail_pct: 0.03
+use_bracket_orders: true
+vix_threshold: 25
+volatility_adaptation:
+  enabled: true
+  high_vol_multiplier: 0.7
+  high_vol_threshold: 0.6
+  low_vol_multiplier: 1.3
+  low_vol_threshold: 0.45
+  medium_vol_multiplier: 1.0
+  medium_vol_threshold: 0.5
